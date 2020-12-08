@@ -1,0 +1,50 @@
+<!--
+  - Home Screen
+  - @author    ThemesBuckets <themebucketbd@gmail.com>
+  - @copyright Copyright (c) 2020
+  - @license   ThemesBuckets
+-->
+
+<!-- Header -->
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="color1">
+
+    <!-- Menu Option -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <!-- Title of the app -->
+    <ion-title>Shop Up</ion-title>
+
+    <!-- Cart Button Option -->
+    <ion-buttons slot="end">
+      <ion-button color="white cart_container" [routerLink]="['/cart']">
+        <ion-badge class="cart_container_counter" slot="end">{{cartItemCount|async}}</ion-badge>
+        <ion-icon name="cart" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content id="home" fullscreen>
+
+  <!-- Search bar -->
+
+  <app-search></app-search>
+  <app-home-top-slider></app-home-top-slider>
+  <app-how-it-works></app-how-it-works>
+  <app-featured></app-featured>
+  <app-noel></app-noel>
+  <app-boisson></app-boisson>
+  <app-sucre></app-sucre>
+  <app-hygiene></app-hygiene>
+  <app-sante></app-sante>
+  <app-maison></app-maison>
+  <app-bebe></app-bebe>
+  <app-category-bottom-slider></app-category-bottom-slider>
+  <app-rating></app-rating>
+  <app-bio-for-all></app-bio-for-all>
+
+</ion-content>

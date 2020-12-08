@@ -1,0 +1,7 @@
+{
+  "name": "shopUp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

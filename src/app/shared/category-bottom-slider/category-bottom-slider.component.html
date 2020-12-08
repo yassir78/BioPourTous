@@ -1,0 +1,23 @@
+<div id="categorySlide">
+  <ion-item-divider color="white" class="ion-padding-top">
+    <ion-label color="dark" class="text-bold">Categories</ion-label>
+  </ion-item-divider>
+
+  <ion-slides [options]="slideOpts" class="ion-padding-top">
+    <ion-slide *ngFor="let categorie of categories">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card class="ion-no-padding" [routerLink]="['/product/',categorie.name]">
+              <img [src]="categorie.image" />
+              <ion-card-header>
+                <ion-card-subtitle>{{categorie.name}}</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+  <!-- -->
+  <!-- Categories -->

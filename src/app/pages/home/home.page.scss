@@ -1,0 +1,11 @@
+.cart_container {
+  position: relative;
+  &_counter {
+    background-color: transparent;
+    color: #30656b;
+    font-size: 12px;
+    font-weight: bolder;
+    top: 4px;
+    position: absolute;
+  }
+}

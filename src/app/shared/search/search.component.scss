@@ -1,0 +1,25 @@
+#searchbar {
+  position: relative;
+  ion-searchbar {
+    --background: var(--ion-color-white);
+    border: 1px solid var(--ion-color-medium);
+    border-radius: 25px !important;
+  }
+  .float {
+    ion-item {
+      margin-bottom: 2%;
+    }
+    z-index: 1000;
+    overflow: scroll;
+    border-radius: 10px !important;
+    width: 100%;
+    margin-top: 3%;
+  }
+  .height {
+    height: 100px;
+    overflow: scroll;
+  }
+  .noheight {
+    height: 0;
+  }
+}

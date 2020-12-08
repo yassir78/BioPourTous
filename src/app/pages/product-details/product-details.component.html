@@ -1,0 +1,70 @@
+<!--
+  - Product Details Screen
+  - @author    ThemesBuckets <themebucketbd@gmail.com>
+  - @copyright Copyright (c) 2020
+  - @license   ThemesBuckets
+-->
+
+<!-- Header -->
+<ion-header class="ion-no-border">
+  <ion-toolbar color="color1">
+
+    <!-- Back to previous page -->
+    <ion-buttons slot="start">
+      <ion-back-button color="white" default-href="" (click)="dismiss()" text="" icon="arrow-back">
+      </ion-back-button>
+    </ion-buttons>
+
+    <!-- Title -->
+    <ion-title></ion-title>
+
+    <!-- Cart Page Button -->
+    <ion-buttons slot="end">
+      <ion-button color="white" class=" cart_container" (click)="goToCart()">
+        <ion-badge class="cart_container_counter" slot="end">{{cartItemCount|async}}</ion-badge>
+        <ion-icon name="cart" size="large"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<!-- Main Contents of Page -->
+<ion-content id="product-details" fullscreen>
+
+  <!-- Slider of Product Images -->
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let item of images">
+      <img [src]="item" />
+
+      <!-- Wish Button or Product Like/Dislike Button Option -->
+
+    </ion-slide>
+  </ion-slides>
+
+  <!-- Product Price -->
+  <ion-row class="ion-padding">
+    <ion-text color="color1" class="price">${{discountPrice}} USD &nbsp;</ion-text>
+    <span class="previous-price"> ${{price}}</span>
+  </ion-row>
+
+  <!-- Product Name -->
+  <ion-row class="ion-padding-start product-name">
+    <ion-text>{{name}}</ion-text>
+  </ion-row>
+
+  <!-- Product Description -->
+  <ion-row class="ion-padding">
+    <ion-text color="medium" [innerHTML]="description"></ion-text>
+  </ion-row>
+</ion-content>
+
+
+<!-- Footer -->
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="ion-padding" transparent>
+    <!-- Add To Cart Button -->
+    <ion-button class="add-to-cart" color="color" expand="block" (click)="addToCart()">Ajouter au panier
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

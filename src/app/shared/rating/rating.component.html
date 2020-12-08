@@ -1,0 +1,40 @@
+<div id="rating">
+  <ion-item-divider color="white" class="ion-padding-top">
+    <ion-label color="dark" class="text-bold">Ce qu'ils pensent de nous !</ion-label>
+  </ion-item-divider>
+  <ion-slides [options]="slideOpts">
+    <ion-slide *ngFor="let rate of ratings">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card class="center-text">
+              <ion-card-content>
+                <p> <span *ngIf="rate.star >=1">
+                    <ion-icon color="color1" name="star"></ion-icon>
+                  </span>
+                  <span *ngIf="rate.star >=2">
+                    <ion-icon color="color1" name="star"></ion-icon>
+                  </span>
+                  <span *ngIf="rate.star >=3">
+                    <ion-icon color="color1" name="star"></ion-icon>
+                  </span>
+                  <span *ngIf="rate.star >=4">
+                    <ion-icon color="color1" name="star"></ion-icon>
+                  </span>
+                  <span *ngIf="rate.star >=5">
+                    <ion-icon color="color1" name="star"></ion-icon>
+                  </span>
+
+                </p>
+                <!--  <ion-icon name="star" color="color1" size="large" *ngFor="let i of [0,1,2,3,4]"></ion-icon>-->
+                <ion-card-subtitle class="text-bold">{{rate.name}}</ion-card-subtitle>
+                <ion-text> {{rate.text}}</ion-text>
+              </ion-card-content>
+            </ion-card>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
+</div>
