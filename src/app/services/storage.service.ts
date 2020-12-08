@@ -80,7 +80,7 @@ export class StorageService {
   async getCartItemCount() {
     const products = await await this.getObject("my-cart");
     let length = 0;
-    if (products.length > 0) {
+    if (products) {
       products.forEach((item) => {
         length += item.quantity;
       });
