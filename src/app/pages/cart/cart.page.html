@@ -28,7 +28,6 @@
       <div class="ion-text-center ion-padding">
         <ion-icon name="cart" style="zoom:5.0;" color="medium"></ion-icon>
         <h4>Votre panier est vide</h4>
-        <p>Looks like you haven't added anything to your cart yet</p>
       </div>
     </ion-row>
   </ion-grid>
@@ -84,25 +83,21 @@
     <!-- summary Of Products Price -->
     <ion-list lines="none">
       <ion-item>
-        <ion-label>Sub Total</ion-label>
-        <ion-note slot="end" color="dark">{{total}}</ion-note>
+        <ion-label>Sous Total</ion-label>
+        <ion-note slot="end" color="dark">CHF{{total}}</ion-note>
       </ion-item>
 
       <ion-item>
-        <ion-label>Shipping</ion-label>
-        <ion-note slot="end" color="dark">$25</ion-note>
+        <ion-label>Livraison</ion-label>
+        <ion-note slot="end" color="dark">CHF25</ion-note>
       </ion-item>
 
-      <ion-item>
-        <ion-label>Tax(10%)</ion-label>
-        <ion-note slot="end" color="dark">$100</ion-note>
-      </ion-item>
 
       <ion-item-divider></ion-item-divider>
 
       <ion-item>
         <ion-label>Total</ion-label>
-        <ion-note slot="end" color="dark">${{total + 25 + 100}}</ion-note>
+        <ion-note slot="end" color="dark">CHF{{total + 25 }}</ion-note>
       </ion-item>
     </ion-list>
   </div>

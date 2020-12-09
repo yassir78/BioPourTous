@@ -8,7 +8,12 @@
   .text-bold {
     font-weight: bold;
   }
-
+  .first_letter {
+    text-transform: lowercase;
+  }
+  .first_letter::first-letter {
+    text-transform: uppercase;
+  }
   .product-name {
     padding: 0;
     text-align: left;

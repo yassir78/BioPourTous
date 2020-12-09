@@ -57,7 +57,7 @@
         <ion-card class="ion-no-padding ion-no-margin" [routerLink]="['/product/',item.name]">
           <img [src]="item.image" />
           <ion-card-header>
-            <ion-card-subtitle>{{item.name}}</ion-card-subtitle>
+            <ion-card-subtitle class="first_letter ">{{item.name}}</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
       </ion-col>
@@ -69,7 +69,7 @@
         <ion-card class="ion-no-padding ion-no-margin" [routerLink]="['/product/',item.name]">
           <img [src]="item.image" />
           <ion-card-header>
-            <ion-card-subtitle>{{item.name}}</ion-card-subtitle>
+            <ion-card-subtitle class="first_letter ">{{item.name}}</ion-card-subtitle>
           </ion-card-header>
         </ion-card>
       </ion-col>
@@ -84,7 +84,7 @@
       </ion-thumbnail>
 
       <ion-label>
-        <h2> {{ item.name }}</h2>
+        <h2 class="first_letter "> {{ item.name }}</h2>
       </ion-label>
     </ion-item>
   </ion-list>

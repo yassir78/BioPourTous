@@ -9,6 +9,12 @@
     position: absolute;
   }
 }
+.first_letter {
+  text-transform: lowercase;
+}
+.first_letter::first-letter {
+  text-transform: uppercase;
+}
 #category {
   ion-list {
     margin-bottom: 0px !important;

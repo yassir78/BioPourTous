@@ -59,7 +59,7 @@ export class ProductService {
       },
       {
         id: 6,
-         name: "Produit de maison - lavage",
+        name: "Produit de maison - lavage",
         description: `Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.<br><br> ✔Vegan
 `,
         price: 4.99,
@@ -89,8 +89,8 @@ export class ProductService {
     this.products = [
       {
         id: 9,
-        name: "Womens Long Sweater",
-        description: `100% Polyester. Soft lightweight and stretchy material feels wonderful against your skin. <br/><br/> Our cardigan vests feature lapel collar, open front, solid color, two side pockets, draped, loose fitting, thigh length, warm sweater vets, long vests, sleeveless cardigans with unique trim, pretty nice for a fun layered look.`,
+        name: "Couches Ecologiques",
+        description: `Les couches écologiques Tidoo sont hypoallergéniques et anti-fuites, elles préserveront bébé jusqu'à 12h ! Fabriqué en France. Pack de 50 couches écologiques.`,
         price: 35.99,
         discountPrice: 30,
         images: ["assets/images/products/bebe/image1.jpg"],
@@ -99,9 +99,9 @@ export class ProductService {
       },
       {
         id: 10,
-        name: "Men's Sleeve T-Shirt",
+        name: "Maxi Carrés Coton",
         description:
-          "60% Cotton/40% Polyester, Imported, Adjustable closure, Machine Wash, Original fit",
+          "Après le succès de la gamme de couches écologiques Night&Day, Tidoo lance Care, sa gamme de soins écologiques fabriquée en France",
         price: 65.9,
         discountPrice: 50,
         images: ["assets/images/products/bebe/image2.jpg"],
@@ -110,8 +110,8 @@ export class ProductService {
       },
       {
         id: 11,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
+        name: "Culottes d'apprentissage ",
+        description: `Les culottes d'apprentissage Night & Day allient efficacité et engagement écologique, pour le plus grand confort de bébé et la tranquillité des parents.`,
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/bebe/image3.jpg"],
@@ -169,7 +169,7 @@ export class ProductService {
 
       {
         id: 31,
-       name: "Festin du Père Noël 🎅",
+        name: "Festin du Père Noël 🎅",
         description: `Il semblerait que vous ayez été sage cette année car le Père Noël vous a concocté un vrai festin avec des produits tout en gourmandise : un gâteau italien moelleux à souhait, des escargots pralinés au chocolat noir fondant, une bière et un thé aux arômes hivernaux et une huile d'olive à la truffe pour donner un goût de fêtes à tous vos plats !`,
         price: 55.5,
         discountPrice: 45,
@@ -181,8 +181,7 @@ export class ProductService {
       {
         id: 32,
         name: "Boisson Riz Nature Origine Italie Bio - 1L",
-        description:
-          "Boisson de riz nature origine Italie",
+        description: "Boisson de riz nature origine Italie",
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/boisson/image1.jpg"],
@@ -195,7 +194,7 @@ export class ProductService {
         name: "Produit de maison - lavage",
         description: `Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.<br><br> ✔Vegan
 `,
-   
+
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/maison/image1.jpg"],
@@ -222,8 +221,7 @@ export class ProductService {
       {
         id: 18,
         name: "Boisson Riz Nature Origine Italie Bio - 1L",
-        description:
-          "Boisson de riz nature origine Italie",
+        description: "Boisson de riz nature origine Italie",
         price: 65.9,
         discountPrice: 50,
         images: ["assets/images/products/boisson/image2.jpg"],
@@ -283,7 +281,7 @@ export class ProductService {
       {
         id: 29,
         name: "COOKIE BRUN- 200g",
-        description:`Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.<br><br>✔Vegan
+        description: `Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.<br><br>✔Vegan
 `,
         price: 6.5,
         discountPrice: 45,
@@ -315,9 +313,8 @@ export class ProductService {
       {
         id: 24,
         name: "Tofu Fumé Bio - 200g",
-        description:
-        `Ce tofu au délicieux goût fumé sera parfait grillé ou mariné. Faites le plein de protéines végétales ! <br> <br>✔Vegan`,
-        price: 3.60 ,
+        description: `Ce tofu au délicieux goût fumé sera parfait grillé ou mariné. Faites le plein de protéines végétales ! <br> <br>✔Vegan`,
+        price: 3.6,
         discountPrice: 50,
         images: ["assets/images/products/sale/image2.jpg"],
         category: "sale",
@@ -326,7 +323,7 @@ export class ProductService {
       {
         id: 25,
         name: "Truff 100% Bio - 200g",
-        description:  `Ce tofu au délicieux goût fumé sera parfait grillé ou mariné. Faites le plein de protéines végétales ! <br> <br>✔Vegan`,
+        description: `Ce tofu au délicieux goût fumé sera parfait grillé ou mariné. Faites le plein de protéines végétales ! <br> <br>✔Vegan`,
         price: 4.4,
         discountPrice: 45,
         images: ["assets/images/products/sale/image3.jpg"],
@@ -352,7 +349,7 @@ export class ProductService {
       },
       {
         id: 27,
-         name: "Festin du Père Noël 🎅",
+        name: "Festin du Père Noël 🎅",
         description: `Il semblerait que vous ayez été sage cette année car le Père Noël vous a concocté un vrai festin avec des produits tout en gourmandise : un gâteau italien moelleux à souhait, des escargots pralinés au chocolat noir fondant, une bière et un thé aux arômes hivernaux et une huile d'olive à la truffe pour donner un goût de fêtes à tous vos plats !`,
         price: 65.9,
         discountPrice: 50,
