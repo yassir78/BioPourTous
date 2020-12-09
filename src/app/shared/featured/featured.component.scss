@@ -5,6 +5,14 @@
     background-position: center center;
     height: 150px;
   }
+  .container {
+    position: relative;
+  }
+  .discount {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
   .product-name {
     padding: 0;
     text-align: left;

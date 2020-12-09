@@ -27,6 +27,11 @@ export class PageService {
         url: "/cart",
         icon: "cart",
       },
+      {
+        title: "Mon compte",
+        url: "/account",
+        icon: "person",
+      },
     ];
   }
 }

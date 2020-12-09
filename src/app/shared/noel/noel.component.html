@@ -10,10 +10,14 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-card class="ion-no-margin" (click)="seeDetails(item)">
-              <div class="card-img" [style.background-image]="'url(' + item.images[0] + ')'"></div>
+            <ion-card class="ion-no-margin " (click)="seeDetails(item)">
+              <div class="card-img container" [style.background-image]="'url(' + item.images[0] + ')'">
+                <ion-badge color="color1" class="discount">{{item.discountPrice}}%</ion-badge>
+              </div>
+
               <ion-card-content>
                 <ion-row>
+
                   <ion-text color="color1">${{item.discountPrice}} &nbsp;</ion-text>
                   <span class="previous-price"> ${{item.price}}</span>
                 </ion-row>
