@@ -14,37 +14,37 @@ export class CategorieService {
       {
         id: 1,
         name: "maison",
-        image: "assets/images/category/women-fashion.jpg",
+        image: "assets/images/category/maison/image1.jpg",
       },
       {
         id: 2,
         name: "bebe",
-        image: "assets/images/category/men-fashion.jpg",
+        image: "assets/images/category/bebe/image1.jpg",
       },
       {
         id: 3,
         name: "sante",
-        image: "assets/images/category/luggage.jpg",
+        image: "assets/images/category/sante/image1.jpg",
       },
       {
         id: 4,
         name: "boisson",
-        image: "assets/images/category/luggage.jpg",
+        image: "assets/images/category/boisson/image1.jpg",
       },
       {
         id: 5,
-        name: "featured",
-        image: "assets/images/category/luggage.jpg",
+        name: "sale",
+        image: "assets/images/category/sante/image1.jpg",
       },
       {
         id: 6,
         name: "noel",
-        image: "assets/images/category/luggage.jpg",
+        image: "assets/images/category/noel/image1.jpg",
       },
       {
         id: 7,
         name: "sucre",
-        image: "assets/images/category/luggage.jpg",
+        image: "assets/images/category/sucre/image1.jpg",
       },
     ];
 

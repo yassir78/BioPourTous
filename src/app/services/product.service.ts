@@ -11,9 +11,9 @@ export class ProductService {
     this.products = [
       {
         id: 1,
-        name: "Womens Long Sweater",
-        description: `100% Polyester. Soft lightweight and stretchy material feels wonderful against your skin. <br/><br/> Our cardigan vests feature lapel collar, open front, solid color, two side pockets, draped, loose fitting, thigh length, warm sweater vets, long vests, sleeveless cardigans with unique trim, pretty nice for a fun layered look.`,
-        price: 35.99,
+        name: "Huile Végétale de Nigelle Bio - 50ml",
+        description: `L'huile végétale de nigelle est l'huile parfaite pour confectionner des soins pour les peaux à tendance acnéique, grâce à ses propriétés purifiantes.`,
+        price: 6.7,
         discountPrice: 30,
         images: ["assets/images/products/sante/image1.jpg"],
         category: "sante",
@@ -21,10 +21,10 @@ export class ProductService {
       },
       {
         id: 2,
-        name: "Men's Sleeve T-Shirt",
+        name: "Huile de Nigelle Bio - 50ml",
         description:
-          "60% Cotton/40% Polyester, Imported, Adjustable closure, Machine Wash, Original fit",
-        price: 65.9,
+          "L'huile végétale de nigelle est l'huile parfaite pour confectionner des soins pour les peaux à tendance acnéique, grâce à ses propriétés purifiantes.",
+        price: 6.9,
         discountPrice: 50,
         images: ["assets/images/products/sante/image2.jpg"],
         category: "sante",
@@ -32,8 +32,8 @@ export class ProductService {
       },
       {
         id: 3,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
+        name: "Huile Bio - 50ml",
+        description: `L'huile végétale de nigelle est l'huile parfaite pour confectionner des soins pour les peaux à tendance acnéique, grâce à ses propriétés purifiantes.`,
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/sante/image3.jpg"],
@@ -48,9 +48,10 @@ export class ProductService {
     this.products = [
       {
         id: 5,
-        name: "Womens Long Sweater",
-        description: `100% Polyester. Soft lightweight and stretchy material feels wonderful against your skin. <br/><br/> Our cardigan vests feature lapel collar, open front, solid color, two side pockets, draped, loose fitting, thigh length, warm sweater vets, long vests, sleeveless cardigans with unique trim, pretty nice for a fun layered look.`,
-        price: 35.99,
+        name: "Produit de maison - lavage",
+        description: `Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.<br><br> ✔Vegan
+`,
+        price: 4.99,
         discountPrice: 30,
         images: ["assets/images/products/maison/image1.jpg"],
         category: "Maison",
@@ -58,10 +59,10 @@ export class ProductService {
       },
       {
         id: 6,
-        name: "Men's Sleeve T-Shirt",
-        description:
-          "60% Cotton/40% Polyester, Imported, Adjustable closure, Machine Wash, Original fit",
-        price: 65.9,
+         name: "Produit de maison - lavage",
+        description: `Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.<br><br> ✔Vegan
+`,
+        price: 4.99,
         discountPrice: 50,
         images: ["assets/images/products/maison/image2.jpg"],
         category: "Maison",
@@ -69,9 +70,11 @@ export class ProductService {
       },
       {
         id: 7,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
-        price: 55.5,
+        name: "Produit de maison - lavage",
+        description: `Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.<br><br> ✔Vegan
+
+`,
+        price: 4.99,
         discountPrice: 45,
         images: ["assets/images/products/maison/image3.jpg"],
         category: "Maison",
@@ -133,8 +136,8 @@ export class ProductService {
       },
       {
         id: 14,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
+        name: "COOKIE BRUN - 200g",
+        description: `Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.`,
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/sucre/image1.jpg"],
@@ -143,9 +146,9 @@ export class ProductService {
       },
       {
         id: 15,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
-        price: 55.5,
+        name: "Huile Végétale de Nigelle Bio - 50ml",
+        description: `L'huile végétale de nigelle est l'huile parfaite pour confectionner des soins pour les peaux à tendance acnéique, grâce à ses propriétés purifiantes.`,
+        price: 9.5,
         discountPrice: 45,
         images: ["assets/images/products/sante/image1.jpg"],
         category: "Sante",
@@ -154,19 +157,20 @@ export class ProductService {
 
       {
         id: 30,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
+        name: "Huile d'Olive Vierge Extra Origine Italie Bio - 1L",
+        description: `Cette huile d'olive biologique vierge extra est extraite d'une première pression à froid d'olives sans produits chimiques ou chaleur. Elle est 100% bio et d'origine italienne avec une traçabilité complète. Les olives sont pressées moins de 24h après leur récolte pour conserver toute leur fraîcheur. Elle est issue de la variété Carolea, réputée pour son goût délicat et fruité.
+        Retrouvez toutes nos huiles d'olive bio`,
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/sale/image1.jpg"],
-        category: "Sante",
+        category: "Sale",
         quantity: 1,
       },
 
       {
         id: 31,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
+       name: "Festin du Père Noël 🎅",
+        description: `Il semblerait que vous ayez été sage cette année car le Père Noël vous a concocté un vrai festin avec des produits tout en gourmandise : un gâteau italien moelleux à souhait, des escargots pralinés au chocolat noir fondant, une bière et un thé aux arômes hivernaux et une huile d'olive à la truffe pour donner un goût de fêtes à tous vos plats !`,
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/noel/image1.jpg"],
@@ -176,8 +180,9 @@ export class ProductService {
 
       {
         id: 32,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
+        name: "Boisson Riz Nature Origine Italie Bio - 1L",
+        description:
+          "Boisson de riz nature origine Italie",
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/boisson/image1.jpg"],
@@ -187,8 +192,10 @@ export class ProductService {
 
       {
         id: 15,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
+        name: "Produit de maison - lavage",
+        description: `Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.<br><br> ✔Vegan
+`,
+   
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/maison/image1.jpg"],
@@ -203,9 +210,10 @@ export class ProductService {
     this.products = [
       {
         id: 16,
-        name: "Womens Long Sweater",
-        description: `100% Polyester. Soft lightweight and stretchy material feels wonderful against your skin. <br/><br/> Our cardigan vests feature lapel collar, open front, solid color, two side pockets, draped, loose fitting, thigh length, warm sweater vets, long vests, sleeveless cardigans with unique trim, pretty nice for a fun layered look.`,
-        price: 35.99,
+        name: "Boisson Origine Italie Bio - 1L",
+        description: `Boisson de riz nature origine Italie`,
+
+        price: 1.99,
         discountPrice: 30,
         images: ["assets/images/products/boisson/image1.jpg"],
         category: "Boisson",
@@ -213,9 +221,9 @@ export class ProductService {
       },
       {
         id: 18,
-        name: "Men's Sleeve T-Shirt",
+        name: "Boisson Riz Nature Origine Italie Bio - 1L",
         description:
-          "60% Cotton/40% Polyester, Imported, Adjustable closure, Machine Wash, Original fit",
+          "Boisson de riz nature origine Italie",
         price: 65.9,
         discountPrice: 50,
         images: ["assets/images/products/boisson/image2.jpg"],
@@ -224,8 +232,8 @@ export class ProductService {
       },
       {
         id: 19,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
+        name: "Boisson Riz Nature Origine Italie Bio - 1L",
+        description: `Boisson de riz nature origine Italie`,
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/boisson/image3.jpg"],
@@ -241,9 +249,9 @@ export class ProductService {
     this.products = [
       {
         id: 20,
-        name: "Womens Long Sweater",
-        description: `100% Polyester. Soft lightweight and stretchy material feels wonderful against your skin. <br/><br/> Our cardigan vests feature lapel collar, open front, solid color, two side pockets, draped, loose fitting, thigh length, warm sweater vets, long vests, sleeveless cardigans with unique trim, pretty nice for a fun layered look.`,
-        price: 35.99,
+        name: "COOKIE 100% Bio - 200g",
+        description: `Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.`,
+        price: 4.99,
         discountPrice: 30,
         images: ["assets/images/products/sucre/image1.jpg"],
         category: "Sucre",
@@ -251,10 +259,10 @@ export class ProductService {
       },
       {
         id: 21,
-        name: "Men's Sleeve T-Shirt",
+        name: "COOKIE BRUN- 200g",
         description:
-          "60% Cotton/40% Polyester, Imported, Adjustable closure, Machine Wash, Original fit",
-        price: 65.9,
+          "Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.",
+        price: 4.9,
         discountPrice: 50,
         images: ["assets/images/products/sucre/image2.jpg"],
         category: "Sucre",
@@ -262,8 +270,9 @@ export class ProductService {
       },
       {
         id: 22,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
+        name: "COOKIE BLANC- 200g",
+        description: `Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.<br><br>✔Vegan
+`,
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/sucre/image3.jpg"],
@@ -273,9 +282,10 @@ export class ProductService {
 
       {
         id: 29,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
-        price: 55.5,
+        name: "COOKIE BRUN- 200g",
+        description:`Cette délicieuse tablette de chocolat noir équitable est élaborée dans la plus pure tradition, certifiée bio et équitable, garantissant ainsi des conditions de travail décentes et une juste rémunération des acteurs de la filière, en plus de limiter la déforestation due à la culture du cacao.<br><br>✔Vegan
+`,
+        price: 6.5,
         discountPrice: 45,
         images: ["assets/images/products/sucre/image4.jpg"],
         category: "Sucre",
@@ -290,8 +300,12 @@ export class ProductService {
     this.products = [
       {
         id: 23,
-        name: "Womens Long Sweater",
-        description: `100% Polyester. Soft lightweight and stretchy material feels wonderful against your skin. <br/><br/> Our cardigan vests feature lapel collar, open front, solid color, two side pockets, draped, loose fitting, thigh length, warm sweater vets, long vests, sleeveless cardigans with unique trim, pretty nice for a fun layered look.`,
+        name: "Huile d'Olive Vierge Extra Origine Italie Bio - 1L - 1000 g",
+        description: `Cette huile d'olive biologique vierge extra est extraite d'une première pression à froid d'olives sans produits chimiques ou chaleur. <br><br> Elle est 100% bio et d'origine italienne avec une traçabilité complète. Les olives sont pressées moins de 24h après leur récolte pour conserver toute leur fraîcheur. Elle est issue de la variété Carolea, réputée pour son goût délicat et fruité.<br><br>
+   Retrouvez toutes nos huiles bio<br>
+   ✔Elaborée par VOUS<br>
+   ✔ 100% Italie<br>
+   ✔ Direct Producteur`,
         price: 35.99,
         discountPrice: 30,
         images: ["assets/images/products/sale/image1.jpg"],
@@ -300,10 +314,10 @@ export class ProductService {
       },
       {
         id: 24,
-        name: "Men's Sleeve T-Shirt",
+        name: "Tofu Fumé Bio - 200g",
         description:
-          "60% Cotton/40% Polyester, Imported, Adjustable closure, Machine Wash, Original fit",
-        price: 65.9,
+        `Ce tofu au délicieux goût fumé sera parfait grillé ou mariné. Faites le plein de protéines végétales ! <br> <br>✔Vegan`,
+        price: 3.60 ,
         discountPrice: 50,
         images: ["assets/images/products/sale/image2.jpg"],
         category: "sale",
@@ -311,9 +325,9 @@ export class ProductService {
       },
       {
         id: 25,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
-        price: 55.5,
+        name: "Truff 100% Bio - 200g",
+        description:  `Ce tofu au délicieux goût fumé sera parfait grillé ou mariné. Faites le plein de protéines végétales ! <br> <br>✔Vegan`,
+        price: 4.4,
         discountPrice: 45,
         images: ["assets/images/products/sale/image3.jpg"],
         category: "Sale",
@@ -328,9 +342,9 @@ export class ProductService {
     this.products = [
       {
         id: 26,
-        name: "Womens Long Sweater",
-        description: `100% Polyester. Soft lightweight and stretchy material feels wonderful against your skin. <br/><br/> Our cardigan vests feature lapel collar, open front, solid color, two side pockets, draped, loose fitting, thigh length, warm sweater vets, long vests, sleeveless cardigans with unique trim, pretty nice for a fun layered look.`,
-        price: 35.99,
+        name: "Festin du Père Noël 🎅",
+        description: `Il semblerait que vous ayez été sage cette année car le Père Noël vous a concocté un vrai festin avec des produits tout en gourmandise : un gâteau italien moelleux à souhait, des escargots pralinés au chocolat noir fondant, une bière et un thé aux arômes hivernaux et une huile d'olive à la truffe pour donner un goût de fêtes à tous vos plats !`,
+        price: 63.99,
         discountPrice: 30,
         images: ["assets/images/products/noel/image1.jpg"],
         category: "Noel",
@@ -338,9 +352,8 @@ export class ProductService {
       },
       {
         id: 27,
-        name: "Men's Sleeve T-Shirt",
-        description:
-          "60% Cotton/40% Polyester, Imported, Adjustable closure, Machine Wash, Original fit",
+         name: "Festin du Père Noël 🎅",
+        description: `Il semblerait que vous ayez été sage cette année car le Père Noël vous a concocté un vrai festin avec des produits tout en gourmandise : un gâteau italien moelleux à souhait, des escargots pralinés au chocolat noir fondant, une bière et un thé aux arômes hivernaux et une huile d'olive à la truffe pour donner un goût de fêtes à tous vos plats !`,
         price: 65.9,
         discountPrice: 50,
         images: ["assets/images/products/noel/image2.jpg"],
@@ -349,8 +362,8 @@ export class ProductService {
       },
       {
         id: 28,
-        name: "Triple Zip Pocket Large Crossbody Bag",
-        description: `Zipper closure, Adjustable shoulder strap with 24" drop, Faux leather & gold tone hardware, 1 zipper pocket & 1 open pocket inside`,
+        name: "Festin du Père Noël 🎅",
+        description: `Il semblerait que vous ayez été sage cette année car le Père Noël vous a concocté un vrai festin avec des produits tout en gourmandise : un gâteau italien moelleux à souhait, des escargots pralinés au chocolat noir fondant, une bière et un thé aux arômes hivernaux et une huile d'olive à la truffe pour donner un goût de fêtes à tous vos plats !`,
         price: 55.5,
         discountPrice: 45,
         images: ["assets/images/products/noel/image3.jpg"],
