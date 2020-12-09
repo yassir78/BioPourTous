@@ -47,12 +47,25 @@ const routes: Routes = [
     canActivate: [GuardGuard],
   },
   {
-    path: 'check-out',
-    loadChildren: () => import('./pages/check-out/check-out.module').then( m => m.CheckOutPageModule)
+    path: "check-out",
+    loadChildren: () =>
+      import("./pages/check-out/check-out.module").then(
+        (m) => m.CheckOutPageModule
+      ),
   },
   {
-    path: 'essai-gratuit',
-    loadChildren: () => import('./pages/essai-gratuit/essai-gratuit.module').then( m => m.EssaiGratuitPageModule)
+    path: "essai-gratuit",
+    loadChildren: () =>
+      import("./pages/essai-gratuit/essai-gratuit.module").then(
+        (m) => m.EssaiGratuitPageModule
+      ),
+  },
+  {
+    path: "reset-password",
+    loadChildren: () =>
+      import("./reset-password/reset-password.module").then(
+        (m) => m.ResetPasswordPageModule
+      ),
   },
 ];
 

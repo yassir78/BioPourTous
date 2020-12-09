@@ -27,11 +27,6 @@ export class PageService {
         url: "/cart",
         icon: "cart",
       },
-      {
-        title: "Commande",
-        url: "/checkout",
-        icon: "checkbox",
-      },
     ];
   }
 }

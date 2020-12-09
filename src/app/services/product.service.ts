@@ -364,7 +364,11 @@ export class ProductService {
   productAll() {
     this.products = this.productBebeList()
       .concat(this.productMaisonList())
-      .concat(this.productSanteList());
+      .concat(this.productSanteList())
+      .concat(this.productBoissonList())
+      .concat(this.productNoelList())
+      .concat(this.productSaleList())
+      .concat(this.productSucreList());
     return this.products;
   }
   findByCategory(category: string) {
@@ -374,10 +378,18 @@ export class ProductService {
       return this.productBebeList();
     } else if (category === "maison") {
       return this.productMaisonList();
+    } else if (category === "boisson") {
+      return this.productBoissonList();
+    } else if (category === "featured") {
+      return this.productFeaturedList();
+    } else if (category === "sale") {
+      return this.productSaleList();
+    } else if (category === "noel") {
+      return this.productNoelList();
+    } else if (category === "sucre") {
+      return this.productSucreList();
     } else {
-      this.products = this.productBebeList()
-        .concat(this.productMaisonList())
-        .concat(this.productSanteList());
+      this.products = this.productAll();
       return this.products;
     }
   }

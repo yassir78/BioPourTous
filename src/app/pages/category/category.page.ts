@@ -1,3 +1,5 @@
+import { BehaviorSubject } from "rxjs";
+import { StorageService } from "./../../services/storage.service";
 import { Category } from "./../../models/category";
 import { CategorieService } from "./../../services/categorie.service";
 import { Router } from "@angular/router";
@@ -13,11 +15,16 @@ export class CategoryPage implements OnInit {
   grid: Boolean = true;
   oneColumn: Boolean = false;
   list: Boolean = false;
-
+  cartItemCount: BehaviorSubject<number>;
   constructor(
+    private storageService: StorageService,
     private router: Router,
     private categoryService: CategorieService
-  ) {}
+  ) {
+    this.storageService.getCartItemCount().then((result) => {
+      this.cartItemCount = result;
+    });
+  }
   ngOnInit() {
     this.getCategories();
   }
