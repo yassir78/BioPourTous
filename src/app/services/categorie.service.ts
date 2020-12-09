@@ -13,17 +13,37 @@ export class CategorieService {
     this.categories = [
       {
         id: 1,
-        name: "Maison",
+        name: "maison",
         image: "assets/images/category/women-fashion.jpg",
       },
       {
         id: 2,
-        name: "Bebe",
+        name: "bebe",
         image: "assets/images/category/men-fashion.jpg",
       },
       {
         id: 3,
-        name: "Sante",
+        name: "sante",
+        image: "assets/images/category/luggage.jpg",
+      },
+      {
+        id: 4,
+        name: "boisson",
+        image: "assets/images/category/luggage.jpg",
+      },
+      {
+        id: 5,
+        name: "featured",
+        image: "assets/images/category/luggage.jpg",
+      },
+      {
+        id: 6,
+        name: "noel",
+        image: "assets/images/category/luggage.jpg",
+      },
+      {
+        id: 7,
+        name: "sucre",
         image: "assets/images/category/luggage.jpg",
       },
     ];

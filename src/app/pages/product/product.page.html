@@ -19,8 +19,9 @@
 
     <!-- Product Filter Option -->
     <ion-buttons slot="end">
-      <ion-button color="white">
-        <ion-icon name="funnel"></ion-icon>
+      <ion-button color="white cart_container" [routerLink]="['/cart']">
+        <ion-badge class="cart_container_counter" slot="end">{{cartItemCount|async}}</ion-badge>
+        <ion-icon name="cart" size="large"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>

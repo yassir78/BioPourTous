@@ -1,3 +1,5 @@
+import { BehaviorSubject } from "rxjs";
+import { StorageService } from "./../../services/storage.service";
 import { Category } from "./../../models/category";
 import { ModalController, NavParams } from "@ionic/angular";
 import { ProductDetailsComponent } from "./../product-details/product-details.component";
@@ -18,11 +20,17 @@ export class ProductPage implements OnInit {
   list: Boolean = false;
   title: String;
   products: Product[];
+  cartItemCount: BehaviorSubject<number>;
   constructor(
     private activatedRoute: ActivatedRoute,
     private productService: ProductService,
-    private modalController: ModalController
-  ) {}
+    private modalController: ModalController,
+    private storageService: StorageService
+  ) {
+    this.storageService.getCartItemCount().then((result) => {
+      this.cartItemCount = result;
+    });
+  }
 
   ngOnInit() {
     //this.category = this.activatedRoute.snapshot.params.Category;
