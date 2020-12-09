@@ -11,14 +11,21 @@ export class StorageService {
   private cartItemCount: BehaviorSubject<number> = new BehaviorSubject(0);
   constructor() {}
 
-  async setObject(product: Product, ITEMS_KEY) {
+  async setObject(product: Product, ITEMS_KEY, operation: string) {
     await Storage.get({ key: ITEMS_KEY }).then(async (products: any) => {
       this.cartItemCount.next(this.cartItemCount.value + 1);
       if (products.value) {
         let newProducts: any = JSON.parse(products.value);
         let hasItem = newProducts.find((item, index) => {
           if (item.id == product.id) {
-            let newQte = newProducts[index].quantity + 1;
+            let newQte;
+            if (operation == "plus") {
+              newQte = newProducts[index].quantity + 1;
+            } else {
+              if (newProducts[index].quantity > 0) {
+                newQte = newProducts[index].quantity - 1;
+              }
+            }
             newProducts[index].quantity = newQte;
             return true;
           }

@@ -65,6 +65,6 @@ export class ProductDetailsComponent implements OnInit {
     };
 
     // Save cart product in storage
-    this.storageService.setObject(this.product, "my-cart");
+    this.storageService.setObject(this.product, "my-cart", "plus");
   }
 }

@@ -42,6 +42,7 @@ export class CartPage implements OnInit {
       product.quantity = product.quantity - 1;
       this.total = this.total - product.discountPrice;
     }
+    this.storageSerivce.setObject(product, "my-cart", "mince");
   }
 
   // Add More Quantity
@@ -53,6 +54,7 @@ export class CartPage implements OnInit {
       product.quantity = product.quantity + 1;
     }
     this.total = this.total + product.discountPrice;
+    this.storageSerivce.setObject(product, "my-cart", "plus");
   }
 
   // Remove Product From Cart
