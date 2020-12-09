@@ -19,4 +19,5 @@ export class AccountPage implements OnInit {
       console.log(this.currentUser);
     });
   }
+  update() {}
 }
