@@ -52,6 +52,7 @@ const routes: Routes = [
       import("./pages/check-out/check-out.module").then(
         (m) => m.CheckOutPageModule
       ),
+    canActivate: [GuardGuard],
   },
   {
     path: "essai-gratuit",
@@ -59,6 +60,7 @@ const routes: Routes = [
       import("./pages/essai-gratuit/essai-gratuit.module").then(
         (m) => m.EssaiGratuitPageModule
       ),
+    canActivate: [GuardGuard],
   },
   {
     path: "reset-password",
@@ -71,6 +73,7 @@ const routes: Routes = [
     path: "account",
     loadChildren: () =>
       import("./pages/account/account.module").then((m) => m.AccountPageModule),
+    canActivate: [GuardGuard],
   },
 ];
 

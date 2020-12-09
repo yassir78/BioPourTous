@@ -66,8 +66,8 @@
           <!-- Product Contents -->
           <ion-card-content (click)="goToProductDetails(item)">
             <ion-row>
-              <ion-text color="color1">${{item.discountPrice}} &nbsp;</ion-text>
-              <span class="previous-price"> ${{item.price}}</span>
+              <ion-text color="color1">CHF{{item.discountPrice}} &nbsp;</ion-text>
+              <span class="previous-price"> CHF{{item.price}}</span>
             </ion-row>
             <ion-row>
               <h4 class="product-name">{{item.name | slice:0:20}}</h4>
@@ -94,8 +94,8 @@
           <!-- Product Contents -->
           <ion-card-content (click)="goToProductDetails(item)">
             <ion-row>
-              <ion-text color="color1">${{item.discountPrice}} &nbsp;</ion-text>
-              <span class="previous-price"> ${{item.price}}</span>
+              <ion-text color="color1">CHF{{item.discountPrice}} &nbsp;</ion-text>
+              <span class="previous-price">CHF{{item.price}}</span>
             </ion-row>
             <ion-row>
               <h4 class="product-name">{{item.name | slice:0:20}}</h4>
@@ -125,8 +125,8 @@
               <h4 class="product-name">{{item.name | slice:0:20}}</h4>
             </ion-row>
             <ion-row>
-              <ion-text color="color1">${{item.discountPrice}} &nbsp;</ion-text>
-              <span class="previous-price"> ${{item.price}}</span>
+              <ion-text color="color1">CHF{{item.discountPrice}} &nbsp;</ion-text>
+              <span class="previous-price">CHF{{item.price}}</span>
             </ion-row>
           </ion-label>
         </ion-item>
