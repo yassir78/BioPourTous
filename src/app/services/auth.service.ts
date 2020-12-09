@@ -1,8 +1,10 @@
+import { Observable } from "rxjs";
 import firebase from "firebase";
 import { User } from "./../models/user";
 import { Injectable, NgZone } from "@angular/core";
 import { AngularFireAuth } from "@angular/fire/auth";
 import { AngularFirestore } from "@angular/fire/firestore";
+import { AngularFireDatabase } from "@angular/fire/database";
 @Injectable({
   providedIn: "root",
 })
@@ -10,6 +12,7 @@ export class AuthService {
   private fireData = firebase.database().ref("/users");
   constructor(
     private afStore: AngularFirestore,
+    private db: AngularFireDatabase,
     private afAuth: AngularFireAuth,
     private ngZone: NgZone
   ) {}
@@ -60,5 +63,12 @@ export class AuthService {
   passwordReset(email: string) {
     var auth = firebase.auth();
     return auth.sendPasswordResetEmail(email);
+  }
+  getCurrentUser() {
+    return this.db.list("users").valueChanges();
+  }
+
+  getConnectedUser() {
+    return firebase.auth().currentUser;
   }
 }

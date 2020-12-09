@@ -1,0 +1,47 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="color1">
+
+    <!-- Side Menu -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <!-- Page title -->
+    <ion-title>Account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content id="account" class="ion-padding">
+
+  <!-- User/Profile Infos -->
+  <ion-item lines="none">
+    <!-- Avatar/Image of User -->
+
+    <!-- Name of User -->
+    <ion-label>
+      <h2 *ngIf="currentUser">{{currentUser[0].fullName}}</h2>
+    </ion-label>
+  </ion-item>
+  <div class="section_two ion-padding" *ngIf="currentUser">
+
+    <ion-item class="ion-margin-bottom">
+      <ion-label>
+        <ion-icon name="call" color="color2"></ion-icon>
+      </ion-label>
+      <ion-input required disabled type="number" value="{{currentUser[0].phoneNumber}}" name="phone">
+      </ion-input>
+    </ion-item>
+    <ion-item class="ion-margin-bottom">
+      <ion-label>
+        <ion-icon name="mail" color="color2"></ion-icon>
+      </ion-label>
+      <ion-input required disabled type="text" value="{{currentUser[0].email}}" name="phone">
+      </ion-input>
+    </ion-item>
+    <ion-button expand="block" color="color1" type="submit" (click)="update()">
+      <ion-text><strong>Mettre à jour</strong></ion-text>
+    </ion-button>
+  </div>
+  <!-- Some Menu Options -->
+</ion-content>

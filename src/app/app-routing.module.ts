@@ -67,6 +67,11 @@ const routes: Routes = [
         (m) => m.ResetPasswordPageModule
       ),
   },
+  {
+    path: "account",
+    loadChildren: () =>
+      import("./pages/account/account.module").then((m) => m.AccountPageModule),
+  },
 ];
 
 @NgModule({
